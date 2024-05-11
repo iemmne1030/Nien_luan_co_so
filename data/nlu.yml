@@ -1,0 +1,738 @@
+version: "3.1"
+
+nlu:
+- intent: hi
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào bạn 
+    - chào anh
+    - chào chị 
+    - hi chatbot
+    - chatbot
+    - chào
+    - chatbot
+    - chào buổi sáng 
+    - chào buổi trưa  
+    - chào buổi chiều
+    - chào buổi tối 
+    - Who are you
+
+
+- intent: bye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt 
+    - ok
+    - cảm ơn 
+    - hẹn gặp lại
+    - bái bai 
+    - bai
+    - gặp lại sau 
+    - oke
+    - okay
+    - thanks
+    - cảm ơn nhé
+    - lần sau gặp lại 
+    - sớm gặp lại
+    - cảm ơn, tạm biệt
+
+- intent: ask_name_month_year
+  examples: |
+    - Các công trình thanh niên trong tháng [1](lt_month) năm [2023](lt_year)
+    - Năm [2023](lt_year) có tổ chức những công trình nào trong tháng [7](lt_month)
+    - tháng [1](lt_month) năm [2023](lt_year) có những công trình nào ?
+    - Tháng [10](lt_month) năm [2022](lt_year) có sự kiện thanh niên nào diễn ra?
+    - Tháng [11](lt_month) năm [2022](lt_year) có công trình thanh niên nào diễn ra?
+    - Tháng [11](lt_month) năm [2022](lt_year) có những công trình nào được thực hiện bởi thanh niên?
+    - Tháng [2](lt_month) năm [2021](lt_year) có công trình thanh niên nào không ?
+    - Tháng [2](lt_month) năm [2023](lt_year) có những công trình thanh niên nào được tổ chức?
+    - Tháng [2](lt_month) năm [2023](lt_year) có những công trình thanh niên nổi bật nào ?
+    - Tháng [7](lt_month) năm [2022](lt_year) có sự kiện thanh niên nào 
+    - Trong tháng [7](lt_month) năm [2022](lt_year), có sự kiện thanh niên nào được tổ chức?
+    - Tháng [8](lt_month) năm [2021](lt_year) có tổ chức những công trình thanh niên nào ?
+    - Thống kê các công trình thanh niên trong tháng [1](lt_month) năm [2023](lt_year)
+    - Trong tháng [10](lt_month) năm [2022](lt_year), có sự kiện thanh niên nào diễn ra?
+    - Trong tháng [2](lt_month) năm [2024](lt_year), có sự kiện thanh niên nào được tổ chức?
+    - Trong tháng [3](lt_month) năm [2024](lt_year), có công trình thanh niên nào được tổ chức?
+    - Trong tháng [8](lt_month) năm [2022](lt_year) có những công trình thanh niên nào diễn ra ?
+    - Xin cho biết công trình thanh niên nào diễn ra vào tháng [1](lt_month) năm [2023](lt_year)?
+    - Xin hỏi vào tháng [11](lt_month) năm [2023](lt_year), có sự kiện thanh niên nào được tổ chức?
+    - Xin vui lòng cho biết công trình thanh niên nào diễn ra vào tháng [6](lt_month) năm [2023](lt_year)?
+    - Có những công trình thanh niên gì diễn ra trong tháng [8](lt_month) của năm [2023](lt_year)?
+    - Có những công trình nào trong tháng [11](lt_month) của năm [2022](lt_year) mà thanh niên tham gia?
+    - Công trình thanh niên nào thường diễn ra trong tháng [12](lt_month) của năm [2021](lt_year)?
+    - Công trình nào của thanh niên thường diễn ra vào tháng [8](lt_month) của năm [2022](lt_year)?
+    - Đã có những công trình gì trong tháng [4](lt_month) năm [2023](lt_year)?
+    - Kế hoạch gì cho công trình thanh niên vào tháng [3](lt_month) năm [2022](lt_year)?
+    - Năm [2023](lt_year) có kế hoạch gì cho công trình thanh niên trong tháng [2](lt_month)?
+    - Tháng [1](lt_month) năm [2023](lt_year) là thời gian của các hoạt động nghệ thuật của thanh niên?
+    - Tháng [10](lt_month) năm [2023](lt_year) có những cơ hội nào cho thanh niên tham gia các công trình ?
+    - Tháng [4](lt_month) năm [2021](lt_year) đã diễn ra những hoạt động nào của thanh niên?
+    - Tháng [6](lt_month) năm [2023](lt_year) đã có những công trình nào của thanh niên?
+    - Trong khoảng tháng [11](lt_month) đến tháng [1](lt_month) năm [2022](lt_year), đã có những công trình nào mà thanh niên được tham gia?
+    - Trong khoảng thời gian từ tháng [10](lt_month) đến tháng [12](lt_month) năm [2021](lt_year)
+    - Trong năm [2022](lt_year), tháng [5](lt_month) là thời gian của các hoạt động thanh niên nào?
+    - Trong tháng [12](lt_month) năm [2022](lt_year), đã có những công trình nào của thanh niên?
+    - Trong tháng [7](lt_month) năm [2022](lt_year), diễn ra những hoạt động gì do thanh niên tổ chức?
+    - Bạn có biết công trình trong tháng [11](lt_month) năm [2022](lt_year) không?
+    - Bạn có thông tin về công trình thanh niên trong tháng [3](lt_month) năm [2023](lt_year) không?
+    - Bạn có thông tin về các công trình trong tháng [7](lt_month) năm [2023](lt_year) không?
+    - Công trình nào diễn ra trong tháng [6](lt_month) năm [2022](lt_year)?
+    - Tháng [12](lt_month) năm [2021](lt_year) có công trình nào dành cho thanh niên không?
+    - Tháng [8](lt_month) năm [2021](lt_year) có công trình nào tạo điều kiện cho thanh niên không?
+    - Tháng [3](lt_month) năm [2021](lt_year) có công trình thanh niên nào diễn ra không?
+    - Tôi muốn biết công trình nào diễn ra trong tháng [5](lt_month) năm [2023](lt_year)?
+    - Tôi muốn tìm hiểu về công trình thanh niên trong tháng [6](lt_month) năm [2023](lt_year)
+    - Tôi quan tâm đến công trình thanh niên diễn ra trong tháng [8](lt_month) năm [2023](lt_year)
+    - Tôi quan tâm đến công trình diễn ra trong tháng [9](lt_month) năm [2022](lt_year)
+    - Trong tháng [7](lt_month) năm [2022](lt_year), có công trình thanh niên nào đáng chú ý không?
+    - Tháng [1](lt_month) năm [2000](lt_year) có công trình nào
+    - Công trình thanh niên nào được thực hiện trong tháng [1](lt_month) năm [2011](lt_year) 
+    - Công trình thanh niên nào được tổ chức trong tháng [6](lt_month) năm [2022](lt_year) 
+    - Có kế hoạch gì cho công trình thanh niên vào tháng [12](lt_month) năm [2021](lt_year) không?
+    - Có công trình thanh niên nào vào tháng [1](lt_month) năm [2011](lt_year) không
+    - Công trình thanh niên nào diễn ra vào tháng [12](lt_month) năm [2021](lt_year)
+    - Công trình nào được tổ chức vào tháng [12](lt_month) năm [2021](lt_year) 
+    - Liệt kê những công trình thanh niên được diễn ra vào tháng [12](lt_month) năm [2021](lt_year) 
+    - Bạn có thể giới thiệu cho tôi công trình thanh niên nào diễn ra vào tháng [12](lt_month) năm [2021](lt_year) 
+    - Bạn có thể giúp tôi tìm kiếm thông tin về công trình thanh niên diễn ra vào tháng [12](lt_month) năm [2021](lt_year)
+    - Bạn có thông tin gì về công trình thanh niên trong tháng [12](lt_month) năm [2021](lt_year) không
+    - Có những hoạt động nào của thanh niên diễn ra vào tháng [2](lt_month) năm [2023](lt_year)
+    - Bạn có thể giới thiệu cho tôi những công trình thanh niên được tổ chức vào tháng [1](lt_month) năm [2021](lt_year)
+    - Những công trình thanh niên nào được tổ chức vào tháng [3](lt_month) năm [2021](lt_year)
+    - Hãy cho tôi biết những công trình thanh niên được lên kế hoạch vào tháng [12](lt_month) năm [2021](lt_year)
+    - Sự kiện thanh niên nào được tổ chức vào tháng [10](lt_month) năm [2021](lt_year)
+    - Tháng [12](lt_month) năm [2021](lt_year) có những công trình thanh niên nào được tổ chức
+    - Hãy giới thiệu cho tôi những công trình thanh niên nào được lên kế hoạch vào tháng [12](lt_month) năm [2021](lt_year)
+    - Cho tôi biết về các dự án của thanh niên sắp diễn ra vào tháng [6](lt_month) năm [2022](lt_year).
+    - Cho tôi biết về các sự kiện thanh niên được lên kế hoạch trong tháng [6](lt_month) năm [2022](lt_year)
+    - Có dự án gì của thanh niên vào tháng [6](lt_month) năm [2022](lt_year) nay không?
+    - Có những công trình nào của thanh niên sẽ diễn ra tháng [6](lt_month) năm [2022](lt_year) không?
+    - Có những công việc gì dành cho thanh niên trong tháng [6](lt_month) năm [2022](lt_year)
+    - Có những hoạt động nào dành cho thanh niên vào tháng [6](lt_month) năm [2022](lt_year)
+    - Có những sự kiện gì được tổ chức bởi thanh niên trong tháng [6](lt_month) năm [2022](lt_year)
+    - Hãy cho tôi biết về các công trình thanh niên vào tháng [6](lt_month) năm [2022](lt_year)
+    - Hãy cho tôi biết về các công trình mà thanh niên đã lên kế hoạch vào tháng [6](lt_month) năm [2022](lt_year)
+    - Hãy kể cho tôi biết về các dự án thanh niên đã được lên kế hoạch trong tháng [6](lt_month) năm [2022](lt_year)
+    - Hãy nói về các công việc thanh niên sẽ thực hiện vào tháng [6](lt_month) năm [2022](lt_year)
+    - Những hoạt động thanh niên nào diễn ra vào tháng [6](lt_month) năm [2022](lt_year)
+    - Thanh niên đã lên kế hoạch tổ chức những dự án nào vào tháng [6](lt_month) năm [2022](lt_year)
+    - Tôi muốn biết về các dự án thanh niên diễn ra trong tháng [6](lt_month) năm [2022](lt_year)
+    - Tôi muốn biết về các sự kiện thanh niên vào tháng [6](lt_month) năm [2022](lt_year)
+    - Tôi quan tâm đến các hoạt động công trình thanh niên vào tháng [6](lt_month) năm [2022](lt_year)
+    - Xin vui lòng cho tôi biết về các dự án thanh niên sắp diễn ra trong tháng [6](lt_month) năm [2022](lt_year)
+    - Xin vui lòng nói về các sự kiện mà thanh niên đã kế hoạch vào tháng [6](lt_month) năm [2022](lt_year)
+    - Tôi muốn biết các công trình thanh niên sắp thực hiện vào tháng [6](lt_month) năm [2022](lt_year)
+    - Những công trình thanh niên nào được thực hiện vào tháng [6](lt_month) năm [2022](lt_year)
+    - Liệt kê những công trình thanh niên có kế hoạch thực hiện vào tháng [6](lt_month) năm [2022](lt_year)
+    - Những dự án thanh niên nào được thực hiện vào tháng [6](lt_month) năm [2022](lt_year)
+    - Dự án nào của thanh niên được thực hiện vào tháng [3](lt_month) năm [2022](lt_year)
+    - Tôi quan tâm về các công trình thanh niên được thực hiện vào tháng [1](lt_month) năm [2022](lt_year)
+    - Tôi quan tâm về các dự án thanh niên được thực hiện vào tháng [10](lt_month) năm [2021](lt_year)
+    - Hãy thông tin cho tôi về các công trình thanh niên được thực hiện vào tháng [5](lt_month) năm [2023](lt_year)
+    - Tháng [10](lt_month) năm [2022](lt_year) có những hoạt động thanh niên nào
+    - Tháng [7](lt_month) năm [2023](lt_year) có những dự án nào
+    - Những dự án được tổ chức vào tháng [10](lt_month) năm [2022](lt_year)
+    - Tôi muốn biết những sự kiện thanh niên được tổ chức vào tháng [10](lt_month) năm [2022](lt_year)
+    - Hãy cho tôi biết những sự kiện thanh niên nào được tổ chức vào tháng [12](lt_month) năm [2022](lt_year)
+    - Dự án nào được thực hiện vào tháng [11](lt_month) năm [2022](lt_year)
+    - Không biết có những dự án thanh niên nào được thực hiện vào tháng [2](lt_month) năm [2022](lt_year) không?
+    - Không biết có những công trình thanh niên nào được thực hiện vào tháng [6](lt_month) năm [2022](lt_year) không?
+    - Hãy cho tôi biết những công trình thanh niên naò được thực hiện vào tháng [9](lt_month) năm [2022](lt_year)
+    - Vậy có công trình thanh niên nào thực hiện vào tháng [2](lt_month) năm [2022](lt_year)
+    - Vậy có dự án nào thực hiện vào tháng [1](lt_month) năm [2022](lt_year)
+    - Vậy có công trình thanh niên nào thực hiện vào tháng [4](lt_month) năm [2022](lt_year) không ?
+    - Vậy những công trình thanh niên trong tháng [10](lt_month) năm [2024](lt_year) thì sao
+
+- intent: ask_member_name
+  examples: |
+    - [Đường Hoa Thanh Niên](lt_name) có bao nhiêu thành viên
+    - [Đường Hoa Thanh Niên](lt_name) có tổng cộng bao nhiêu thành viên
+    - [Vành đai xanh](lt_name) có bao nhiêu thành viên tham gia?
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có bao nhiêu thành viên
+    - [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có mấy thành viên?
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có tổng cộng bao nhiêu người
+    - Ai biết [Mùa hè xanh](lt_name) có bao nhiêu thành viên không?
+    - Ai biết số người tham gia [mùa hè xanh](lt_name) không?
+    - Ai có thể cung cấp thông tin về số lượng thành viên trong [Đường hoa thanh niên](lt_name)?
+    - Ai có thông tin về số lượng thành viên trong [Vành đai xanh](lt_name) không?
+    - Ai có thông tin về số thành viên tham gia vào [đường hoa thanh niên](lt_name) vào thời điểm này?
+    - Cho biết công trình thanh niên [Vành đai xanh](lt_name) có tổng cộng bao nhiêu thành viên
+    - Có bao nhiêu người tham gia [Thắp sáng đường quê](lt_name)
+    - Có bao nhiêu người trong [thắp sáng đường quê](lt_name)?
+    - Có bao nhiêu thành viên tham gia [Vành đai xanh](lt_name)?
+    - Có bao nhiêu thành viên trong [Đường hoa thanh niên](lt_name)
+    - Công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) có bao nhêu thành viên?
+    - Số lượng người tham gia [tuổi trẻ tình nguyện vì cộng đồng](lt_name) là bao nhiêu?
+    - Số lượng thành viên tham gia [đường hoa thanh niên](lt_name) có được cập nhật không?
+    - Số lượng thành viên trong [Vành đai xanh](lt_name)
+    - Số người tham gia [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) là bao nhiêu?
+    - Số thành viên tham gia [Mùa hè xanh](lt_name) là?
+    - Số thành viên tham gia [Vành đai xanh](lt_name) là bao nhiêu?
+    - Thành viên trong [Vành đai xanh](lt_name) là bao nhiêu?
+    - Xin cho biết số thành viên trong [đường hoa thanh niên](lt_name)
+    - Xin cho tôi biết liệu số thành viên trong [mùa hè xanh](lt_name)
+    - Xin cho tôi biết số người tham gia [Vành đai xanh](lt_name)
+    - Xin cho tôi biết số thành viên tham [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Xin cho tôi biết thành viên tham gia công trình [Vành đai xanh](lt_name)
+    - Xin thông tin về số lượng thành viên trong [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - [Vành đai xanh](lt_name) có bao nhiêu thành viên
+    - Bao nhiêu thành viên tham gia công trình thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) 
+    - Bao nhiêu thành viên tham gia vào dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Bao nhiêu thành viên trong công trình [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Có ai đã tham gia vào [Mùa hè xanh](lt_name) từ khi dự án mới thành lập?
+    - Có ai đã tham gia vào [tuổi trẻ tình nguyện vì cộng đồng](lt_name) từ khi họ còn là học sinh trung học?
+    - Có ai đang tham gia vào [Vành đai xanh](lt_name) từ các tổ chức xã hội?
+    - Có ai quản lý danh sách thành viên của dự án [đường hoa thanh niên](lt_name)
+    - Có bao nhiêu người tham gia vào công trình thanh niên [Thắp sáng đường quê](lt_name) 
+    - Có bao nhiêu người tham gia vào công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Có bao nhiêu người tham gia vào dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) 
+    - Có bao nhiêu thành viên của [Đường hoa thanh niên](lt_name) 
+    - Có bao nhiêu thành viên đã tham gia vào công trình [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Có bao nhiêu thành viên đã tham gia vào công trình [thắp sáng đường quê](lt_name)
+    - Có bao nhiêu thành viên đã tham gia vào dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Có bao nhiêu thành viên tham gia hoạt động công trình [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) ?
+    - Có bao nhiêu thành viên trong [Đường hoa thanh niên](lt_name)
+    - Công trình [Mùa hè xanh](lt_name) có bao nhiêu thành viên tham gia  
+    - Số lượng thành viên đang tham gia vào công trình [Thắp sáng đường quê](lt_name) là bao nhiêu?
+    - Số lượng thành viên tham gia vào dự án [Thắp sáng đường quê](lt_name) là bao nhiêu?
+    - Số lượng thành viên trong dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) là bao nhiêu?
+    - Số thành viên trong công trình thanh niên [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) là bao nhiêu?
+    - Số thành viên trong dự án [Đường hoa thanh niên](lt_name) 
+    - Số thành viên trong dự án [Mùa hè xanh](lt_name) là bao nhiêu?
+    - Thành viên của công trình thanh niên [Thắp sáng đường quê](lt_name) là bao nhiêu
+    - Thành viên của công trình thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) là?
+    - Xin số liệu về số thành viên của công trình thanh niên [Mùa hè xanh](lt_name) 
+    - Xin thông tin về số thành viên tham gia vào dự án [Đường hoa thanh niên](lt_name).
+    - Xin thông tin về số thành viên trong công trình [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Thành viên tham gia công trình thanh niên [Thắp sáng đường quê](lt_name) là bao nhiêu
+    - Thành viên tham gia dự án [Thắp sáng đường quê](lt_name) tổng cộng bao nhiêu người
+    - Cho biết công trình thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có tổng cộng bao nhiêu thành viên
+    - Cho biết dự án [Mùa hè xanh](lt_name) có tổng cộng bao nhiêu thành viên 
+    - Có bao nhiêu thanh niên thanh gia công trình [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Tôi muốn biết tổng số thành viên thanh gia công trình [Đường hoa thanh niên](lt_name) là bao nhiêu 
+    - Tổng số thành viên thanh gia công trình [tuổi trẻ tình nguyện vì cộng đồng](lt_name) là bao nhiêu
+    - Có tất cả bao nhiêu thanh niên tham gia dự án [Thắp sáng đường quê](lt_name) 
+    - Có tất cả bao nhiêu thành viên tham gia vào công trình thanh niên [Thắp sáng đường quê](lt_name)
+    - [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) có tất cả bao nhiêu thành viên tham gia 
+    - [Thắp sáng đường quê](lt_name) có bao nhiêu thành viên tham gia
+    - Thông tin cho tôi về số thành viên của dự án [Mùa hè xanh](lt_name)
+    - Dự án [vành đai xanh](lt_name) có tổng cộng bao nhiêu thành viên 
+    - Công trình thanh niên [Mùa hè xanh](lt_name) có tất cả bao nhiêu thành viên
+    - Hãy cho tôi biết công trình thanh niên [Thắp sáng đường quê](lt_name) có bao nhiêu thành viên
+    - Hãy cho tôi biết công trình [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có bao nhiêu thành viên
+    - Hãy cho tôi biết số thành viên trong dự án [Mùa hè xanh](lt_name) 
+    - Số thành viên trong dự án [Mùa hè xanh](lt_name) là bao nhiêu
+    - Số thành viên trong công trình thanh niên [Thắp sáng đường quê](lt_name) là bao nhiêu
+    - Có tổng cộng bao nhiêu thành viên trong dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Số liệu về số thành viên của công trình thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) là bao nhiêu
+    - Số thành viên trong dự án [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) là bao nhiêu
+    - Tôi muốn biết trổng số thành viên trong dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) có số thành viên là bao nhiêu
+    - Không biết dự án thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) có tất cả bao nhiêu thành viên 
+    - Hãy cho tôi biết [Đường hoa thanh niên](lt_name) có tất cả bao nhiêu thành viên
+    - Hãy cho tôi biết [tuổi trẻ tình nguyện vì cộng đồng](lt_name) có bao nhiêu thành viên
+    - Không biết có tất cả bao nhiêu thành viên trong dự án [thắp sáng đường quê](lt_name)
+    - Không biết có bao nhiêu thành viên trong công trình thanh niên [đường hoa thanh niên](lt_name) 
+    - Thông tin cho tôi về số thành viên trong công trình thanh niên [mùa hè xanh](lt_name)
+    - Tổng số thành viên trong dự án [thắp sáng đường quê](lt_name)
+    - Tổng số thành viên trong công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Bao nhiêu thành viên trong công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Bao nhiêu thành viên trong dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) có tổng số thành viên là bao nhiêu?
+    - Tôi muốn biết tổng số thành viên trong dự án thanh niên [thắp sáng đường quê](lt_name) là bao nhiêu
+    - Tất cả bao nhiêu thành viên trong dự án [mùa hè xanh](lt_name)
+    - Tất cả bao nhiêu thành viên tham gia vào công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Có bao nhiêu người tham gia vào dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tổng cộng có bao nhiêu người tham gia vào dự án [thắp sáng đường quê](lt_name)
+    - [Thắp sáng đường quê](lt_name) có bao nhiêu người
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có tất cả bao nhiêu người
+    - Vậy công trình thanh niên [Thắp sáng đường quê](lt_name) có bao nhiêu người
+    - Vậy dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có bao nhiêu thành viên
+    - Vậy số thành viên trong dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) thì sao 
+
+- intent: ask_done_name
+  examples: |
+    - [Vành đai xanh](lt_name) đã được kết thúc chưa
+    - [vành đai xanh](lt_name) đã được hoàn thành hay chưa
+    - Công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã được hoàn thành hay chưa?
+    - Công trình [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã được kết thúc chưa
+    - Công trình thanh niên [Thắp sáng đường quê](lt_name) đã được kết thúc chưa
+    - Công trình [Thắp sáng đường quê](lt_name) đã được kết thúc hoặc vẫn còn cần thực hiện thêm?
+    - Công trình thanh niên [thắp sáng đường quê](lt_name)  đã được kết thúc hoàn toàn chưa
+    - [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã được kết thúc tất cả công đoạn chưa?
+    - Công trình [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã hoàn thành một phần hay còn triển khai công việc còn lại?
+    - Công trình thanh niên [mùa hè xanh](lt_name) đã hoàn thành hay vẫn còn triển khai?
+    - Công trình [Mùa hè xanh](lt_name) đã hoàn thành phần nào hay đang tiếp tục công việc còn lại?
+    - Công trình thanh niên [đường hoa thanh niên](lt_name) đã được hoàn thành đến đâu rồi?
+    - Công trình [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã được hoàn thành đến đâu rồi?
+    - Công trình thanh niên [Đường hoa thanh niên](lt_name) đã được hoàn thành một phần chưa?
+    - Công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã được hoàn thành xong chưa?
+    - [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã được hoàn thành xong chưa?
+    - Công trình thanh niên [vành đai xanh](lt_name) đã hoàn thành chưa
+    - Công trình [vành đai xanh](lt_name) đã hoàn thành một phần hay đang tiếp tục?
+    - [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã được hoàn thành hay đang trong quá trình triển khai?
+    - Công việc của công trình [vành đai xanh](lt_name) đã được kết thúc hay còn tiếp tục công việc còn lại không?
+    - [vành đai xanh](lt_name) đã được kết thúc hay còn tiếp tục
+    - Công việc công trình [đường hoa thanh niên](lt_name) đã được kết thúc hay tiếp tục công việc còn lại?
+    - Công việc [vành đai xanh](lt_name) đã được hoàn thành chưa
+    - [Đường hoa thanh niên](lt_name) đã được hoàn thành hay chưa hoàn thành
+    - Công việc [vành đai xanh](lt_name) đã được thực hiện hoàn toàn chưa
+    - [vành đai xanh](lt_name) đã được thực hiện chưa hay còn đang tiến hành?
+    - Công trình [vành đai xanh](lt_name) đã được thực hiện hay còn đang hoàn thành?
+    - [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã hoàn thành hay còn đang triển khai?
+    - [vành đai xanh](lt_name) đã hoành thành chưa?
+    - Công việc [mùa hè xanh](lt_name) đã kết thúc hay còn đang triển khai?
+    - [Đường hoa thanh niên](lt_name) đã kết thúc chưa
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã xong chưa?
+    - Dự án [đường hoa thanh niên](lt_name) đã được hoàn thành chưa
+    - Dự án [thắp sáng đường quê](lt_name) đã kết thúc hay đang triển khai
+    - Dự án thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã hoàn thành chưa 
+    - Dự án thanh niên [vành đai xanh](lt_name)  đã hoàn thành chưa
+    - Chương trình [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã hoàn thành chưa 
+    - Công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name) kết thúc chưa 
+    - Cho tôi biết công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã hoàn thành chưa
+    - Cho tôi biết tiến độ hoàn thành của công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Cho tôi biết công trình thanh niên [mùa hè xanh](lt_name) đã hoàn thành chưa?
+    - Cho tôi viết về việc công trình thanh niên [đường hoa thanh niên](lt_name) hoàn thành chưa
+    - Cho tôi biết công trình [mùa hè xanh](lt_name) đã hoàn thành chưa?
+    - Cho tôi biết tiến độ hoàn thành của công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) có hoàn thành chưa?
+    - Công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã đạt được các mục tiêu ban đầu chưa?
+    - Xin thông tin về công trình thanh niên [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã hoàn thành chưa
+    - Xin thông tin về dự án [đường hoa thanh niên](lt_name) đã hoàn thành chưa
+    - Tôi muốn hỏi về việc tiến độ hoàn thành của công trình thanh niên [mùa hè xanh](lt_name)
+    - Thông tin cho tôi về tiến độ của [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Thông tin cho tôi về tiến độ của dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn biết về tiến độ của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Tôi muốn biết về tiến độ của dự án [vành đai xanh](lt_name)
+    - Thông tin cho tôi về tiến độ hoàn thành của công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có tiến độ như thế nào
+    - Tiến độ hoàn thành của công trình thanh niên [vành đai xanh](lt_name) 
+    - Tiến độ hoàn thanh của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tiến độ của dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Tiến độ của công trình thanh niên [mùa hè xanh](lt_name) như thế nào
+    - Thông tin cho tôi về tiến dộ của công trình thanh niên [mùa hè xanh](lt_name)
+    - Thông tin cho tôi về tiến dộ của dự án [mùa hè xanh](lt_name)
+    - Thông tin cho tôi về công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) như thế nào
+    - Hãy cho tôi biết về tiến độ của công trình thanh niên [vành đai xanh](lt_name)
+    - Hãy cho vôi biết về tiến độ của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) 
+    - Xin thông tin về tiến độ công trình thanh niên [đường hoa thanh niên](lt_name) 
+    - Xin thông tin về độ hoàn thành của công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Xin thông tin về độ hoàn thành của dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Dự án [mùa hè xanh](lt_name) có tiến độ như thế nào
+    - Dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) tiến độ thế nào
+    - Không biết công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) có tiến độ như thế nào
+    - Không biết công trình thanh niên [mùa hè xanh](lt_name) có hoàn thành chưa
+    - Không biết dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) có hoàn thành chưa
+    - Tôi muốn biết về tiến độ của công trình thanh niên [vành đai xanh](lt_name)
+    - Tôi muốn biết về tiến độ hoàn thành của công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn biết về tiến độ hoàn thành của dự án [đường hoa thanh niên](lt_name)
+    - Hãy cho vôi biết về tiến độ hoàn thành của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) 
+    - Hãy cập nhật về tiến độ làm việc của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) ?
+    - Hãy cập nhật về tiến độ làm việc của công trình thanh niên [vành đai xanh](lt_name)
+    - Cập nhập cho tôi tiến độ làm việc của dự án [đường hoa thanh niên](lt_name)
+    - Cập nhập cho tôi tiến độ làm việc của công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Cập nhập cho tôi mức độ hoàn thành công việc của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Mức độ hoàn thành công việc của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Mức độ hoàn thành của công trình thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Mức độ hoàn thành công việc của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Mức độ hoàn thành của dự án [vành đai xanh](lt_name) là?
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có tiến độ hoàn thành là gì
+    - Vậy công trình thanh niên [vành đai xanh](lt_name) đã hoàn thành chưa
+    - Vậy dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã hoàn thành chưa
+    - Vậy tiến độ hoàn thành của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) thì sao?
+    - Vậy tiến độ hoàn thành của công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) thì sao?
+    - Tiến độ của dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) thì sao
+    - Tiến độ của công trình thanh niên [vành đai xanh](lt_name) thì sao
+    - Có thể cho tôi biết công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) đã hoàn thành chưa
+    - Có thể cho tôi biết dự án [vành đai xanh](lt_name) đã hoàn thành chưa
+    - Có thể cho tôi biết tiến độ của công trình thanh niên [vành đai xanh](lt_name) không?
+    - Có thể cho tôi biết tiến độ của dự án [mùa hè xanh](lt_name) không?
+    - Có thể cho tôi biết tiến độ của chương trình [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) không?
+    - Chương trình [vành đai xanh](lt_name) có tiến độ như thế nào?
+    - Chương trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) có tiến độ như thế nào?
+    - Nói cho tôi biết về tiến độ của công trình thanh niên [mùa hè xanh](lt_name)
+    - Nói cho tôi biết công trình thanh niên [mùa hè xanh](lt_name) có tiến độ như thế nào?
+
+- intent: ask_place_name
+  examples: |
+    - Công trình thanh niên [Vành đai xanh](lt_name) này diễn ra tại địa điểm nào
+    - Công trình thanh niên [vành đai xanh](lt_name) diễn ra ở đâu?
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) diễn ra ở đâu?
+    - [Thắp sáng đường quê](lt_name) được tổ chức ở đâu
+    - [thắp sáng đường quê](lt_name) được tổ chức ở đâu
+    - [mùa hè xanh](lt_name) được tổ chức ở đâu
+    - Công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) sẽ diễn ra ở đâu
+    - Công trình thanh niên [mùa hè xanh](lt_name) sẽ diễn ra tại đâu
+    - Công trình [Mùa hè xanh](lt_name) diễn ra tại đâu?
+    - Công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) sẽ diễn ra tại đâu
+    - Công trình [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) sẽ diễn ra tại?
+    - Công trình thanh niên [Đường hoa thanh niên](lt_name) sẽ được tổ chức ở đâu?
+    - Công trình [đường hoa thanh niên](lt_name) được tổ chức ở đâu?
+    - Công trình thanh niên [mùa hè xanh](lt_name) sẽ được tổ chức tại đâu
+    - Công trình [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) được tổ chức tại đâu?
+    - Công trình thanh niên [Thắp sáng đường quê](lt_name) sẽ được tổ chức tại địa điểm nào?
+    - Chương trình [Thắp sáng đường quê](lt_name) của thanh niên này đã được lên kế hoạch ở đâu?
+    - [Mùa hè xanh](lt_name) được lên kế hoạch ở đâu?
+    - Công việc [mùa hè xanh](lt_name) của thanh niên này đã được lên kế hoạch tại đâu
+    - Công việc thanh niên [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) được lên kế hoạch tại đâu?
+    - Công trình thanh niên [Thắp sáng đường quê](lt_name) đã được lên kế hoạch tại đâu?
+    - Công trình thanh niên [đường hoa thanh niên](lt_name) được tổ chức ở đâu
+    - Công việc thanh niên [mùa hè xanh](lt_name) sẽ được tổ chức ở đâu?
+    - Địa điểm của công trình [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã được xác định chưa?
+    - Địa điểm của công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) là gì?
+    - Địa điểm hoạt động của [tuổi trẻ chung tay bảo vệ môi trường](lt_name) thanh niên đã được xác định là gì?
+    - Địa điểm của công trình thanh niên [Vành đai xanh](lt_name)
+    - Địa điểm của công trình [Vành đai xanh](lt_name)
+    - Địa điểm tổ chức công trình [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã được xác định chưa?
+    - Địa điểm hoạt động của công trình thanh niên [mùa hè xanh](lt_name) là gì?
+    - Địa điểm diễn ra của công trình thanh niên [mùa hè xanh](lt_name) đã được xác định là gì?
+    - Địa điểm diễn ra của công trình [mùa hè xanh](lt_name) đã được xác định là gì?
+    - Địa điểm diễn ra của công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã được xác định là gì
+    - Nơi diễn ra công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) là ở đâu?
+    - Nơi diễn ra [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) đã được xác định là gì?
+    - Nơi diễn ra [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) của thanh niên đã được xác định là gì
+    - Nơi tổ chức của công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) đã được xác định chưa?
+    - Nơi tổ chức của công trình [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được xác định chưa?
+    - Xin vui lòng chỉ ra nơi tổ chức của [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name).
+    - Xin vui lòng chỉ ra nơi tổ chức của công trình [mùa hè xanh](lt_name)
+    - Xin vui lòng chỉ ra nơi tổ chức của chương trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Có thể cho tôi biết địa điểm tổ chức của công trình thanh niên [mùa hè xanh](lt_name) 
+    - Có thể cho tôi biết nơi tổ chức của công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Có thể cho tôi biết công trình thanh niên [đường hoa thanh niên](lt_name) được tổ chức ở đâu 
+    - Có thể cho tôi biết nơi diễn ra công trình thanh niên [Thắp sáng đường quê](lt_name)
+    - Không biết công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) được tổ chức ở đâu
+    - Không biết dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được tổ chức ở đâu
+    - Không biết dự án thanh niên [mùa hè xanh](lt_name) diễn ra ở đâu
+    - Không biết địa điểm tổ chức công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) ở đâu?
+    - Hãy cho tôi biết nơi diễn ra công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Hãy cho tôi biết địa điểm diễn ra công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Hãy cho tôi biết địa điểm diễn ra dự án thanh niên [Thắp sáng đường quê](lt_name)
+    - Hãy cho tôi biết dự án thanh niên [vành đai xanh](lt_name) được diễn ra ở đâu
+    - [Thắp sáng đường quê](lt_name) được diễn ra ở đâu
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được tổ chức ở đâu
+    - Địa điểm tổ chức của [đường hoa thanh niên](lt_name) là?
+    - Hãy thông tin cho tôi biết địa điểm diễn ra dự án thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Vậy nơi tổ chức công trình thanh niên [thắp sáng đường quê](lt_name) thì sao?
+    - Vậy địa điểm tổ chức công trình thanh niên [đường hoa thanh niên](lt_name) thì sao?
+    - Vậy địa điểm tổ chức dự án thanh niên [mùa hè xanh](lt_name) thì sao?
+    - Vậy địa điểm tổ chức dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) thì sao?
+    - Xin thông tin về địa điểm tổ chức của công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Xin thông tin về nơi tổ chức của công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Xin thông tin về nơi tổ chức dự án thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Xin thông tin về nơi tổ chức dự án [vành đai xanh](lt_name)
+    - Xin thông tin về địa điểm tổ chức dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có địa điểm tổ chức là?
+    - Địa điểm tổ chức hoạt động công trình thanh niên [thắp sáng đường quê](lt_name) là gì?
+    - Nơi diễn ra hoạt động của dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Đâu là nơi diễn ra hoạt động của công trình thanh niên [vành đai xanh](lt_name)
+    - Đâu là địa điểm diễn ra hoạt động của công trình thanh niên [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Đâu là nơi diễn ra hoạt động của dự án thanh niên [đường hoa thanh niên](lt_name)
+    - Đâu là địa điểm diễn ra hoạt động của dự án thanh niên [mùa hè xanh](lt_name)
+    - Đâu là nơi tổ chức hoạt động của công trình thanh niên [vành đai xanh](lt_name)
+    - Đâu là địa điểm nơi tổ chức hoạt động của công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Kế hoạch tổ chức công trình thanh niên [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) ở đâu
+    - Tôi muốn biết về địa điểm tổ chức công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Tôi muốn biết về nơi tổ chức công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Tôi muốn biết về địa điểm tổ chức dự án thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn biết về nơi tổ chức dự án thanh niên [vành đai xanh](lt_name)
+    - Thông tin cho tôi về địa điểm tổ chức dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Thông tin cho tôi về địa điểm tổ chức công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Thông tin cho tôi về nơi tổ chức dự án [vành đai xanh](lt_name)
+    - Thông tin cho tôi về nơi tổ chức công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Dự án [đường hoa thanh niên](lt_name) được tổ chức ở đâu
+    - Dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) tổ chức ở đâu
+    - Địa điểm tổ chức của dự án [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) ở đâu
+    - Địa điểm tổ chức của công trình thanh niên [mùa hè xanh](lt_name) là
+    - Địa điểm tổ chức [thắp sáng đường quê](lt_name) là
+    - Nơi diễn ra hoạt động [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Nơi diễn ra dự án [đường hoa thanh niên](lt_name) là
+    - Nơi tổ chức dự án [thắp sáng đường quê](lt_name)
+    - Nơi tổ chức hoạt động [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Nơi tổ chức công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Tổ chức dự án thanh niên [đường hoa thanh niên](lt_name) ở đâu?
+    - Tổ chức công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) ở đâu?
+    - [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) được tổ chức ở địa điểm nào?
+    - Dự án [vành đai xanh](lt_name) được tổ chức ở địa điểm nào?
+    - Công trình thanh niên [mùa hè xanh](lt_name) được tổ chức ở địa điểm nào?
+    - Nơi tổ chức của dự án thanh niên [đường hoa thanh niên](lt_name) là ở đâu
+    - Nơi tổ chức của công trình thanh niên [thắp sáng đường quê](lt_name) là ở đâu?
+    - Nơi nào tổ chức dự án thanh niên [vành đai xanh](lt_name) 
+    - Nơi nào tổ chức công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - [Tuổi trẻ tình nguyện vì cộng đồng](lt_name) được tổ chức ở địa điểm nào?
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được tổ chức ở nơi nào?
+
+- intent: ask_time_name
+  examples: |
+    - [vành đai xanh](lt_name) bắt đầu lúc nào
+    - Công trình [Vành đai xanh](lt_name) bắt đầu lúc mấy giờ
+    - Công trình thanh niên [Đường hoa thanh niên](lt_name) bắt đầu lúc mấy giờ
+    - Thời gian bắt đầu của [Mùa hè xanh](lt_name) là khi nào?
+    - Thời gian bắt đầu của công trình thanh niên [Vành đai xanh](lt_name) là khi nào
+    - Khi nào công trình thanh niên [đường hoa thanh niên](lt_name) sẽ khởi đầu?
+    - [mùa hè xanh](lt_name) sẽ bắt đầu vào khoảng thời gian nào
+    - Công trình thanh niên [Vành đai xanh](lt_name) sẽ bắt đầu vào khoảng thời gian nào
+    - Bắt đầu lúc mấy giờ cho công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Thời gian khởi đầu của [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được xác định là khi nào?
+    - Xin vui lòng cho biết thời gian khởi đầu của công trình thanh niên [Vành đai xanh](lt_name).
+    - Khi bắt đầu cho công trình [Tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Vào khoảng thời gian nào là thời gian bắt đầu của [Vành đai xanh](lt_name)?
+    - Làm ơn cho biết lịch trình bắt đầu của công trình [tuổi trẻ tình nguyện vì cộng đồng](lt_name).
+    - Thời điểm [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) bắt đầu là khi nào?
+    - Kế hoạch bắt đầu của công trình thanh niên [Thắp sáng đường quê](lt_name) là vào lúc nào?
+    - Bắt đầu lúc mấy giờ cho công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) vào ngày đó?
+    - Vào thời gian nào mà công trình [Vành đai xanh](lt_name) sẽ khởi đầu
+    - Khi nào mà công trình [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) sẽ bắt đầu hoạt động?
+    - Khi nào bắt đầu cho công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Thời điểm công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name) bắt đầu là khi nào?
+    - Thời gian bắt đầu của công trình [Vành đai xanh](lt_name) là khi nào
+    - Thời gian bắt đầu của công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Thời gian bắt đầu của dự án thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) là?
+    - Dự án thanh niên [Đường hoa thanh niên](lt_name) bắt đầu lúc mấy giờ
+    - Dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) được tổ chức lúc mấy giờ
+    - Thời gian bắt đầu hoạt động của công trình thanh niên [thắp sáng đường quê](lt_name) là khi nào
+    - Thời gian bắt đầu hoạt động của dự án thanh niên [Vành đai xanh](lt_name) là?
+    - Thời gian bắt đầu tổ chức hoạt động thanh niên [thắp sáng đường quê](lt_name) là khi nào
+    - Thời gian bắt đầu tổ chức hoạt động dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) là khi nào
+    - Thời gian tổ chức hoạt động của dự án [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) là khi nào
+    - Thời gian tổ chức dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) là khi nào
+    - Thời điểm tổ chức hoạt động [vành đai xanh](lt_name) của thanh niên là khi nào
+    - Thời điểm tổ chức dự án [thắp sáng đường quê](lt_name) là khi nào
+    - Thời điểm bắt đầu hoạt động [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) của thanh niên là khi nào
+    - Thời gian [Đường hoa thanh niên](lt_name) bắt đầu là khi nào 
+    - Thời gian công trình [Đường hoa thanh niên](lt_name) tổ chức hoạt động là khi nào 
+    - Khi nào công trình thanh niên [thắp sáng đường quê](lt_name) bắt đầu
+    - Công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) bắt đầu khi nào
+    - Công trình thanh niên [đường hoa thanh niên](lt_name) bắt đầu vào lúc mấy giờ
+    - Công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) tổ chức lúc mấy giờ
+    - Công trình thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name) tổ chức khi nào
+    - Dự án thanh niên [vành đai xanh](lt_name) bắt đầu khi nào
+    - Dự án thanh niên [thắp sáng đường quê](lt_name) bắt đầu vào lúc mấy giờ
+    - Công trình [Vành đai xanh](lt_name) tổ chức khi nào
+    - Dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) tổ chức lúc mấy giờ
+    - Kế hoạch bắt đầu chương trình của công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) là khi nào
+    - Kế hoạch bắt đầu chương trình của dự án thanh niên [vành đai xanh](lt_name) là khi nào
+    - Kế hoạch bắt đầu chương trình của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name) là khi nào
+    - Kế hoạch tổ chức chương trình của dự án thanh niên [đường hoa thanh niên](lt_name) là khi nào
+    - Kế hoạch tổ chức chương trình của công trình thanh niên [vành đai xanh](lt_name) là khi nào
+    - Khi nào bắt đầu khởi công công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Khi nào bắt đầu khởi công công trình [đường hoa thanh niên](lt_name)
+    - Khi nào bắt đầu khởi công dự án thanh niên [vành đai xanh](lt_name)
+    - Khi nào bắt đầu dự án thanh niên [Tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Khi nào công trình thanh niên [vành đai xanh](lt_name) được hoạt động 
+    - Khi nào công trình thanh niên [đường hoa thanh niên](lt_name) được tổ chức
+    - Khi nào công trình thanh niên [thắp sáng đường quê](lt_name) được khởi công
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được khởi công lúc nào 
+    - [Đường hoa thanh niên](lt_name) được bắt đầu lúc nào
+    - [Thắp sáng đường quê](lt_name) bắt đầu lúc mấy giờ
+    - Vậy công trình thanh niên [vành đai xanh](lt_name) bắt đầu khi nào
+    - Vậy dự án thanh niên [thắp sáng đường quê](lt_name) bắt đầu lúc nào
+    - Vậy dự án [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) bắt đầu lúc mấy giờ 
+    - Còn công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) bắt đầu khi nào
+    - Vậy công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) khởi công khi nào
+    - Vậy dự án thanh niên [đường hoa thanh niên](lt_name) khởi công lúc mấy giờ
+    - Còn công trình thanh niên [vành đai xanh](lt_name) khởi công khi nào
+    - Còn công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) khởi công lúc mấy giờ
+    - Còn dự án thanh niên [đường hoa thanh niên](lt_name) bắt đầu khi nào
+    - Còn dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) khởi công khi nào
+    - Bắt đầu khởi hành công trình [thắp sáng đường quê](lt_name) là khi nào
+    - Bắt đầu khởi hành công trình [tuổi trẻ tình nguyện vì cộng đồng](lt_name) lúc mấy giờ
+    - Bắt đầu khởi hành công trình thanh niên [vành đai xanh](lt_name) là khi nào
+    - Bắt đầu khởi hành công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) mấy giờ
+    - Bắt đầu khởi hành dự án [đường hoa thanh niên](lt_name) lúc mấy giờ
+    - Tôi muốn biết về thời gian hoạt động của công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn biết về thời gian hoạt động của dự án thanh niên [đường hoa thanh niên](lt_name
+    - Tôi muốn biết về thời gian hoạt động của công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn biết về thời điểm tổ chức hoạt động công trình [vành đai xanh](lt_name)
+    - Tôi muốn biết về thời điểm tổ chức công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Tôi muốn biết về thời điểm tổ chức công trình [Đường hoa thanh niên](lt_name) là khi nào
+    - Hãy cho tôi biết thời điểm tổ chức công trình thanh niên [vành đai xanh](lt_name) là khi nào
+    - Hãy cho tôi biết thời điểm tổ chức dự án thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Hãy cho tôi biết thời điểm tổ chức dự án [mùa hè xanh](lt_name) là khi nào
+    - Hãy cho tôi biết thời gian hoạt động của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) là khi nào
+    - Hãy cho tôi biết thời gian hoạt động của công trình thanh niên [mùa hè xanh](lt_name) là khi nào
+    - [Mùa hè xanh](lt_name) bắt đầu hoạt động lúc mấy giờ 
+    - Mấy giờ công trình thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) được tổ chức 
+    - Mấy giờ dự án thanh niên [mùa hè xanh](lt_name) được tổ chức
+    - Mấy giờ dự án [mùa hè xanh](lt_name) bắt đầu
+    - Mấy giờ dự án thanh niên [mùa hè xanh](lt_name) được bắt đầu
+    - Không biết [đường hoa thanh niên](lt_name) bắt đầu lúc mấy giờ
+    - Không biết công trình thanh niên [mùa hè xanh](lt_name) bắt đầu lúc mấy giờ
+    - Không biết dự án thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name) bắt đầu lúc mấy giờ
+    - Không biết dự án thanh niên [Đường hoa thanh niên](lt_name) được tổ chức lúc mấy giờ
+
+- intent: ask_name_inf
+  examples: |
+    - Thông tin của công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Thông tin của hoạt động [mùa hè xanh](lt_name)
+    - Thông tin của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Thông tin của dự án thanh niên [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Thông tin về công trình thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Thông tin về công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Thông tin về dự án thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Thông tin về dự án niên [vành đai xanh](lt_name)
+    - Thông tin của công trình thanh niên [mùa hè xanh](lt_name) là?
+    - Thông tin về [đường hoa thanh niên](lt_name)
+    - Thông tin của [vành đai xanh](lt_name) là?
+    - Thông tin của [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Thông tin chi tiết về công trình thanh niên [thắp sáng đường quê](lt_name)
+    - Thông tin chi tiết của dự án [vành đai xanh](lt_name)
+    - Thông tin chi tiết của hoạt động [mùa hè xanh](lt_name)
+    - Hãy thông tin cho tôi về công trình thanh niên [Đường hoa thanh niên](lt_name)
+    - Hãy thông tin cho tôi về công trình [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Hãy thông tin cho tôi về dự án thanh niên [mùa hè xanh](lt_name)
+    - Hãy cho tôi biết thông tin của dự án thanh niên [vành đai xanh](lt_name)
+    - Hãy cho tôi biết thông tin của dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Hãy cho tôi biết về dự án thanh niên [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn biết thông tin của dự án thanh niên [vành đai xanh](lt_name)
+    - Tôi muốn biết về thông tin của hoạt động [thắp sáng đường quê](lt_name)
+    - Tôi muốn biết thông tin của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Tôi muốn biết thông tin chi tiết của dự án thanh niên [thắp sáng đường quê](lt_name)
+    - Tôi muốn biết thông tin chi tiết của hoạt động [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi muốn tìm kiếm về thông tin của dự án thanh niên [thắp sáng đường quê](lt_name)
+    - Tôi muốn tìm kiếm về thông tin của dự án [đường hoa thanh niên](lt_name)
+    - Tôi muốn tìm hiểu về thông tin của dự án thanh niên [mùa hè xanh](lt_name)
+    - Tôi muốn tìm hiểu thông tin của dự án [thắp sáng đường quê](lt_name)
+    - Tôi muốn tìm hiểu tất cả thông tin của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Tôi muốn tìm hiểu tất cả thông tin của dự án [vành đai xanh](lt_name)
+    - Xin thông tin chi tiết về công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Xin thông tin chi tiết về dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Xin thông tin chi tiết của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Xin tất cả thông tin của dự án [đường hoa thanh niên](lt_name)
+    - Xin tất cả thông tin của hoạt động [vành đai xanh](lt_name)
+    - Tôi quan tâm về thông tin chi tiết của dự án [mùa hè xanh](lt_name) 
+    - Tôi quan tâm về thông tin chi tiết của công trình thanh niên [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) 
+    - Tôi quan tâm đến những thông tin của dự án [thắp sáng đường quê](lt_name)
+    - Tôi quan tâm đến những thông tin của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Tôi quan tâm đến những thông tin chi tiết của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tôi quan tâm đến những thông tin chi tiết của hoạt động [vành đai xanh](lt_name)
+    - Những thông tin chi tiết của công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Những thông tin chi tiết của dự án [vành đai xanh](lt_name) 
+    - Những thông tin chi tiết về dự án thanh niên [thắp sáng đường quê](lt_name) 
+    - Những thông tin về dự án thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) 
+    - Những thông tin chi tiết về hoạt động [đường hoa thanh niên](lt_name)
+    - Có thể cho tôi biết thông tin chi tiết của công trình [thắp sáng đường quê](lt_name) không 
+    - Có thể cho tôi biết thông tin chi tiết của dự án [mùa hè xanh](lt_name) không 
+    - Có thể cho tôi biết thông tin chi tiết của hoạt động [vành đai xanh](lt_name) không?
+    - Có thể cho tôi biết thông tin của hoạt động [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) không 
+    - Có thể cho tôi biết thông tin của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) không? 
+    - Tất cả thông tin về công trình [tuổi trẻ tình nguyện vì cộng đồng](lt_name) 
+    - Tất cả thông tin về hoạt động [đường hoa thanh niên](lt_name) 
+    - Tất cả thông tin về dự án [mùa hè xanh](lt_name) 
+    - Tôi muốn biết tất cả thông tin về dự án [đường hoa thanh niên](lt_name) 
+    - Tôi muốn biết tất cả thông tin về hoạt động [tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Tôi muốn biết tất cả thông tin về công trình [đường hoa thanh niên](lt_name) 
+    - Chi tiết thông tin của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Chi tiết thông tin của công trình thanh niên [thắp sáng đường quê](lt_name) 
+    - Chi tiết thông tin của hoạt động [mùa hè xanh](lt_name)
+    - Nói cho tôi biết tất cả thông tin của hoạt động [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Nói cho tôi biết tất cả thông tin của công trình thanh niên [vành đai xanh](lt_name)
+    - Nói cho tôi biết tất cả thông tin của dự án [đường hoa thanh niên](lt_name) 
+    - Nói cho tôi biết thông tin chi tiết của dự án [tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Nói cho tôi biết thông tin chi tiết của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) 
+    - Nói cho tôi biết thông tin chi tiết của hoạt động [mùa hè xanh](lt_name)
+    - Nói cho tôi thông tin chi tiết của hoạt động [thắp sáng đường quê](lt_name) 
+    - Nói cho tôi thông tin chi tiết của công trình thanh niên [vành đai xanh](lt_name) 
+    - Cung cấp cho tôi thông tin chi tiết của công trình thanh niên [đường hoa thanh niên](lt_name)
+    - Cung cấp cho tôi thông tin chi tiết của công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name) 
+    - Cung cấp cho tôi thông tin chi tiết của công trình [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Cung cấp cho tôi thông tin chi tiết của dự án [mùa hè xanh](lt_name)
+    - Cung cấp cho tôi thông tin chi tiết của hoạt động [vành đai xanh](lt_name)
+    - Cung cấp cho tôi thông tin của hoạt động [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Cung cấp cho tôi thông tin của dự án [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Cung cấp cho tôi thông tin của công trình thanh niên [vành đai xanh](lt_name)
+    - Chi tết của hoạt động [tuổi trẻ tình nguyện vì cộng đồng](lt_name) là
+    - Chi tết của dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) là
+    - Chi tết của công trình thanh niên [thắp sáng đường quê](lt_name) là
+    - Có những thông tin cụ thể nào về công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name)
+    - Có những thông tin cụ thể nào về dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name)
+    - Có những thông tin cụ thể nào về hoạt động [thắp sáng đường quê](lt_name)
+    - Công trình thanh niên [vành đai xanh](lt_name) có những thông tin cụ thể nào
+    - Công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) có thông tin chi tiết như thế nào
+    - Dự án [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có những thông tin cụ thể nào
+    - Dự án [thắp sáng đường quê](lt_name) có thông tin chi tiết như thế nào
+    - Hoạt động [đường hoa thanh niên](lt_name)  có những thông tin cụ thể nào
+    - Hoạt động [mùa hè xanh](lt_name) có thông tin chi tiết như thế nào
+    - [Thắp sáng đường quê](lt_name) có những thông tin cụ thể nào
+    - [Xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) có thông tin chi tiết như thế nào
+    - Thông tin chi tiết về dự án [thắp sáng đường quê](lt_name)
+    - Thông tin chi tiết về hoạt động [vành đai xanh](lt_name)
+    - Tất cả thông tin của công trình [tuổi trẻ chung tay bảo vệ môi trường](lt_name)
+    - Tất cả thông tin của hoạt động [đường hoa thanh niên](lt_name) 
+    - Tất cả thông tin của dự án [mùa hè xanh](lt_name) 
+    - Còn thông tin chi tiết của công trình thanh niên [tuổi trẻ tình nguyện vì cộng đồng](lt_name) thì sao?
+    - Còn thông tin chi tiết của dự án [đường hoa thanh niên](lt_name)  thì sao
+    - Còn thông tin chi tiết của hoạt động [thắp sáng đường quê](lt_name)  thì sao?
+    - Còn những thông tin chi tiết của công trình thanh niên [đường hoa thanh niên](lt_name) thì sao?
+    - Còn những thông tin chi tiết của dự án [thắp sáng đường quê](lt_name) thì sao
+    - Còn những thông tin chi tiết của hoạt động [xây dựng nhà nhân ái cho người dân có hoàn cảnh khó khăn](lt_name) thì sao?
+
+#- intent: ask_name_date
+#  examples: |
+#    - Ngày [19](lt_date) có công trình thanh niên nào?
+#    - Ngày [7](lt_date) có những công trình thanh niên nào?
+#    - Trong ngày [30](lt_date) có công trình thanh niên nào không?
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+#
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+#
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?
